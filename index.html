@@ -36,12 +36,23 @@
                 <img class="d-lg-none img-fluid" src="assets/img/logo/logo.png" alt="Logo" width="90" height="69" title="Vmc Logo" loading="lazy">
               </a>
               <div class="order-lg-3 ms-lg-4 ms-auto">
-                 <div class="input-group">
+                 <!-- <div class="input-group">
                     <input class="form-control form-control-xl navbar-search-field" type="text" placeholder="Search Here">
                     <i class="bi-search fs-lg"></i>
-                 </div>
+                 </div> -->
+                 <a href="#" id="search-icon" class="search"><i class="bi-search fs-lg"></i></a>
+                    <div class="form-container">
+                      <form class="navbar-form navbar-left" id="form">
+                        <div class="container">
+                          <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search Here" id="searchbox" />
+                            <i class="bi-search fs-lg"></i>
+                          </div>
+                      </div>
+                      </form>
+                    </div>
               </div>
-              <div class="d-flex align-items-center order-lg-3 ms-lg-4 ms-auto">
+              <div class="d-flex align-items-center order-lg-3 ms-4">
                 <div class="dropdown ms-auto ms-md-0 me-3 text-primary">
                     <a class="topbar-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
                         Eng
@@ -72,36 +83,152 @@
 
 
 
-          <!-- <section class="banner position-relative">
-              <div class="container">
-                 <div class="row">
-                    <div class="col-md-6">
-                      <div class="position-absolute top-50 start-50 translate-middle">
-                          <div class="bg-white p-3">
-                              <h1>EMBASSY OF THE ISLAMIC REPUBLIC OF <span class="text-secondary">MAURITANIA</span></h1>
+          <section class="banner position-relative">
+                    <div class="container-fluid px-0">
+                        <div class="d-md-flex justify-content-between align-items-center">
+                              <div class="position-relative">
+                                <div class="bg-light p-5 embassy-mauritania">
+                                    <div class="">
+                                      <h1 class="fw-normal fs-1">EMBASSY OF THE <br> ISLAMIC REPUBLIC OF <br><span class="text-secondary fw-bold">MAURITANIA</span></h1>
+                                      <p>Lorem ipsum dolor sit amet. Aut consequatur laboriosam et assumenda aperiam non blanditiis expedita sed ratione placeat. Et placeat impedit et autem nobis non....</p>
+                                      <a class="btn btn-primary" href="#">Know More</a>
+                                    </div>
+                                </div>
+                              </div>
+                          <div class="">
+                            <div class="">
+                                <img src="assets/img/banner/banner.webp" class="img-fluid" alt="banner" title="banner" width="1207" height="700">
+                            </div> 
                           </div>
                       </div>
+                </div>
+          </section>
+
+          <section class="py-5 bg-grey position-relative">
+              <div class="container">
+                  <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                      <div class="card h-100 shadow">
+                          <div class="position-relative">
+                            <img src="assets/img/feature/embassy-information.webp" class="card-img-top" alt="Embassy Information" title="Embassy Information">
+                            <div class="embassy-card-title">
+                              <h4 class="text-white mb-0 fw-normal">Information</h4>
+                            </div>
+                          </div>
+                            
+                        <div class="card-body">
+                          <p class="card-text">The Islamic Republic of Mauritania (RIM) is located in sub-Saharan North West Africa between 15th and 27th degrees North latitude and 5th and 17th degrees West longitude. Mauritania is a pivotal country between West Africa, the Maghreb and the Sahara. It is bounded by the Republic of Senegal to the South West, by Mali to the South East and East, by Algeria to the North East and by Western Sahara to the North West. To the west, Mauritania is bounded by the Atlantic Ocean and its coastline stretches for nearly 600 km.</p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-6">
-                       <div class="position-absolute end-0 top-0">
-                          <img src="assets/img/banner/banner.jpg" class="img-fluid" alt="banner" title="banner" width="1207" height="884">
-                       </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                      <div class="card h-100 shadow">
+                        <div class="position-relative">
+                            <img src="assets/img/feature/about-mauritania.webp" class="card-img-top" alt="About Mauritania" title="About Mauritania">
+                            <div class="embassy-card-title">
+                              <h4 class="text-white mb-0 fw-normal">Mauritania</h4>
+                            </div>
+                          </div>
+                        <div class="card-body">
+                          <p class="card-text">Area : 1,030,700 km² </p>
+                          <p>Capital : Nouakchott</p>
+                          <p>Main cities : Nema, Aioun, Kiffa, Kaédi, Aleg, Rosso,</p> 
+                          <p>Nouadhibou, Atar, Tidijikdja, Zouerate, Selibaby, Akjoujt.</p> 
+                          <p>Official language : Arabic </p>
+                          <p>National languages : Arabic, Poular, Soninke, Wolof; </p> 
+                          <p>Currency : ouguiya (1 € = 41.84 ouguiyas approximately)</p>
+                          <p>National day : November 28</p>
+                          
+                        </div>
+                      </div>
                     </div>
-                 </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                      <div class="card h-100 shadow">
+                        <div class="position-relative">
+                            <img src="assets/img/feature/about-economy.webp" class="card-img-top" alt="About Economy" title="About Economy">
+                            <div class="embassy-card-title">
+                              <h4 class="text-white mb-0 fw-normal">Economy</h4>
+                            </div>
+                         </div>
+                        <div class="card-body">
+                          <p class="card-text">GDP (2019) : $ 7,6 Billion</p>
+                          <p>GDP per capita (2019) : $1,392</p>
+                          <p>Inflation rate (2020) : 3,2%</p>
+                          <p>Growth rate (2021-2022) : +2% to +4%</p>
+                          <p>Budget (2021) : MRU 70 billion ($ 1,9 billion)</p>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
               </div>
-          </section> -->
+          </section>
+
+
+          <section class="container-fluid px-0 about-timing-mauritania">
+              <div class="row align-items-center mx-0">
+                  <div class="col-md-12 col-lg-6 p-0">
+                      <div>
+                        <img src="assets/img/feature/about-timing-embassy-mauritania.webp" class="img-fluid" alt="About Timing Embassy Mauritania" title="About Timing Embassy Mauritania">
+                      </div>  
+                  </div>
+                  <div class="col-md-12 col-lg-6 p-0">
+                      <div class="bg-light p-lg-6 p-4">
+                          <div class="timing-width">
+                            <div class="embassy-title">
+                              <p class="text-primary mb-0">About Timing</p>
+                              <h2 class="fw-normal">EMBASSY OF <br> <span class="text-secondary fw-bold"> MAURITANIA </span></h2>
+                          </div>
+
+                          <p class="position-relative border-right-green ps-3">Lorem ipsum dolor sit amet. Aut consequatur laboriosam et assumenda aperiam non blanditiis expedita sed ratione placeat. Et placeat impedit et autem nobis non repellat quis rem voluptatem molestias est tempora neque est quasi illum.
+                            Cum adipisci minima 33 mollitia officia ut fugiat molestiae vel similique laboriosam non quos repellat. Hic temporibus nisi aut ipsum sunt qui omnis quidem cum </p>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                  <div class="d-flex">
+                                    <i class="bi bi-calendar-day text-primary"></i>
+                                    <p class="ps-2 text-dark fw-bold">Monday to Thursday</p>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="d-flex">
+                                    <i class="bi bi-stopwatch text-primary"></i>
+                                    <p class="ps-2 text-dark fw-bold">9:00am to 4:30pm</p>
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="d-flex">
+                                  <i class="bi bi-calendar-day text-primary"></i>
+                                  <p class="ps-2 text-dark fw-bold">Friday</p>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="d-flex">
+                                  <i class="bi bi-stopwatch text-primary"></i>
+                                  <p class="ps-2 text-dark fw-bold">9:00am to 2:00pm</p>
+                                </div>
+                              </div>
+                          </div>
+
+                            <a class="btn btn-primary" href="#">Contact Us</a>
+                          </div>   
+                      </div>
+                  </div>
+              </div>
+          </section>
 
 
 
 
 
-
-
-    <footer class="footer py-5 position-relative">
+    <footer class="footer pt-4 pt-md-5 pb-4 position-relative overflow-hidden">
        <div class="container">
            <div class="row">
                <div class="col-md-8">
-                   <div class="d-flex align-items-center">
+                   <div class="d-flex align-items-center justify-content-center justify-content-md-start">
                     <a href="index.html">
                       <img src="assets/img/logo/logo.png" class="img-fluid" alt="logo" title="logo">
                     </a>
@@ -111,33 +238,43 @@
                     
                    </div> 
 
-                   <div class="mt-5">
-                      <ul class="list-unstyled d-flex">
-                        <li class="me-5"><a class="text-white" href="index.html">Home</a></li>
-                        <li class="me-5"><a class="text-white" href="#">About</a></li>
-                        <li class="me-5"><a class="text-white" href="#">Services</a></li>
-                        <li class="me-5"><a class="text-white" href="#">Gallery</a></li>
-                        <li class="me-5"><a class="text-white" href="#">Contact Us</a></li>
+                   <div class="mt-4 mt-md-5 footer-link">
+                      <ul class="list-unstyled d-flex align-items-center justify-content-between justify-content-md-start">
+                        <li class="me-md-5"><a class="text-white" href="index.html">Home</a></li>
+                        <li class="me-md-5"><a class="text-white" href="#">About</a></li>
+                        <li class="me-md-5"><a class="text-white" href="#">Services</a></li>
+                        <li class="me-md-5"><a class="text-white" href="#">Gallery</a></li>
+                        <li class="me-md-5"><a class="text-white" href="#">Contact Us</a></li>
                       </ul>
                    </div>
                </div>
-               <div class="col-md-4 text-white">
-                  <div class="d-flex">
+               <div class="col-md-4 text-white pb-3 embassy-contact-detail">
+                  <div class="d-flex mb-2">
                     <i class="bi bi-geo-alt me-3"></i>
                     <div>
-                        <p class="mb-2 fs-6">Embassy of Mauritania</p>
-                        <p class="mb-2 fs-6">2 Greycoat Place London SW1P 1SB United Kingdom</p>
+                        <p class="mb-1">Embassy of Mauritania</p>
+                        <p class="mb-1">2 Greycoat Place London SW1P 1SB United Kingdom</p>
                     </div>
                   </div>
-                  <div class="d-flex">
+                  <div class="d-flex mb-2">
                     <i class="bi bi-telephone-outbound me-3"></i>
                     <a class="text-white" href="tel:020 7233 6158">020 7233 6158</a>
                   </div>
-                  <div class="d-flex">
+                  <div class="d-flex mb-2">
                     <i class="bi bi-envelope me-3"></i>
                     <a class="text-white" href="mailto:info@mauritania-embassy.uk">info@mauritania-embassy.uk</a>
                   </div>
                </div>
+           </div>
+           <div class="border-top pt-3">
+              <div class="d-flex align-md-items-center justify-content-between flex-column-reverse flex-md-row">
+                  <p class="mb-0 text-white text-center text-md-start">All Rights Reserved.</p>
+                  <ul class="list-unstyled d-flex mb-0 align-items-center justify-content-evenly">
+                    <li class="ms-md-5"><a class="text-white" href="#">Privacy</a></li>
+                    <li class="ms-md-5"><a class="text-white" href="#">Terms</a></li>
+                    <li class="ms-md-5"><a class="text-white" href="#">Data</a></li>
+                  </ul>
+              </div>
            </div>
        </div>
        <div class="black-logo position-absolute end-0 top-0">
@@ -151,9 +288,11 @@
      <!--js libraries and plugins-->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/smooth-scroll.polyfills.min.js"></script>
+  <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
   <!-- Main theme script-->
   <script src="assets/js/embassy-of-mauritania.js"></script>
   <script src="assets/js/custom.js"></script>
+
+  
 </body>
 </html>

@@ -7,3 +7,10 @@
       }, 2000);
     };
   })();
+
+
+  $(document).ready(function(){
+    $("#search-icon").click(function(){
+      $(".form-container").toggle();
+    })
+  });
