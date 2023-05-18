@@ -3,6 +3,10 @@
 	src: url("../fonts/gothic.ttf") format("truetype");
   }
 
+  @font-face {
+    font-family: "gothi-bold";
+    src: url("../fonts/gothi-bold.ttf") format("truetype");
+    }
 
 
 
@@ -182,10 +186,6 @@ header .search{
     width: 75%;
 }
 
-.embassy-title h2 ,.embassy-title p{
-  font-family: "gothic", sans-serif;
-}
-
 /*slider css start*/
 .owl-nav button {
   position: absolute;
@@ -240,7 +240,23 @@ header .search{
   top: 16%;
 }
 /*slider css end*/
+.owl-prev{
+  display: none;
+}
+.banner .timing-width{
+  width: 73%;
+  margin-left: auto;
+}
 
+.text-gothic{
+  font-family: "gothic", sans-serif;
+}
+.banner-mr{
+  margin-right: -158px;
+}
+/* .banner h1 span{
+  font-family: "gothi-bold", sans-serif;
+} */
 @media (max-width:1024px){
   .embassy-title p {
     font-size: 15px;
@@ -251,6 +267,16 @@ header .search{
   .about-timing-mauritania .timing-width {
     width: 100%;
 }
+}
+
+@media (max-width:1024px){
+  .banner .timing-width{
+    width: 100%;
+    margin-left: unset;
+  }
+  .banner-mr{
+    margin-right: unset;
+  }
 }
 
 @media (max-width:767px) {
@@ -270,7 +296,8 @@ header .search{
     bottom: 0;
   }
   .owl-nav button {
-    height: 44%;
+    /* height: 44%; */
     width: 33px;
   }
+  
 }
