@@ -2139,8 +2139,8 @@ a {
 }
 
 a:hover {
-	color: #493ef0;
-	text-decoration: underline
+    color: #26ab4d;
+    /* text-decoration: underline; */
 }
 
 a:not([href]):not([class]),
@@ -6203,7 +6203,7 @@ fieldset:disabled .btn {
 .nav-tabs .nav-link {
 	margin-bottom: -1px;
 	background: none;
-	border: 1px solid transparent;
+	/* border: 1px solid transparent; */
 	border-top-left-radius: .75rem;
 	border-top-right-radius: .75rem
 }
@@ -6222,7 +6222,7 @@ fieldset:disabled .btn {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-	color: #766df4;
+	color: #26AB4D;
 	background-color: transparent;
 	border-color: rgba(118, 109, 244, .35)
 }
@@ -16583,7 +16583,7 @@ input[type=search]::-webkit-search-results-decoration {
 	height: 2.75rem;
 	transition: right 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity .3s, background-color .25s ease-in-out;
 	border-radius: .75rem;
-	background-color: rgba(55, 56, 78, .25);
+	background-color: rgb(38 171 77);
 	color: #fff;
 	text-align: center;
 	opacity: 0;
@@ -16607,7 +16607,7 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 .btn-scroll-top:hover {
-	background-color: rgba(55, 56, 78, .5);
+	background-color: rgb(38 171 77);
 	color: #fff
 }
 
@@ -17274,11 +17274,11 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 .nav-tabs .nav-link:hover {
-	color: #766df4
+	color: #26AB4D
 }
 
 .nav-tabs .nav-link.active {
-	border: 1px solid rgba(118, 109, 244, .35)
+	border: unset
 }
 
 .nav-tabs .nav-link>i {
