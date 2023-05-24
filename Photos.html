@@ -19,6 +19,38 @@
     <link rel="stylesheet" media="screen" href="assets/css/embassy-of-mauritania.css">
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/vendor/lightgallery.js/dist/css/lightgallery.min.css">
+
+    <!-- <style>
+      .gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.tab:hover {
+  background-color: gray;
+}
+
+.tab.active {
+  background-color: gray;
+  color: white;
+}
+
+    </style> -->
 </head>
 <body>
  <!-- Page loading spinner-->
@@ -309,6 +341,25 @@
           </section>
 
 
+          <!-- <div class="tabs">
+            <button class="tab" onclick="filterImages('all')">All</button>
+            <button class="tab" onclick="filterImages('nature')">Nature</button>
+            <button class="tab" onclick="filterImages('animals')">Animals</button>
+            <button class="tab" onclick="filterImages('cities')">Cities</button>
+          </div>
+          
+          <div class="gallery">
+            <img class="image nature" src="nature1.jpg" alt="Nature 1">
+            <img class="image animals" src="animals1.jpg" alt="Animals 1">
+            <img class="image cities" src="cities1.jpg" alt="Cities 1">
+            <img class="image nature" src="nature2.jpg" alt="Nature 2">
+            <img class="image animals" src="animals2.jpg" alt="Animals 2">
+            <img class="image cities" src="cities2.jpg" alt="Cities 2">
+            Add more images with appropriate class names
+          </div> -->
+          
+
+
     
 
 
@@ -391,5 +442,33 @@
 
   <script src="assets/js/embassy-of-mauritania.js"></script>
 
+  <!-- <script>
+    function filterImages(category) {
+  var images = document.getElementsByClassName('image');
+
+  // Show all images
+  if (category === 'all') {
+    for (var i = 0; i < images.length; i++) {
+      images[i].style.display = 'block';
+    }
+  } else {
+    for (var i = 0; i < images.length; i++) {
+      if (images[i].classList.contains(category)) {
+        images[i].style.display = 'block';
+      } else {
+        images[i].style.display = 'none';
+      }
+    }
+  }
+
+  // Toggle active class on tabs
+  var tabs = document.getElementsByClassName('tab');
+  for (var i = 0; i < tabs.length; i++) {
+    tabs[i].classList.remove('active');
+  }
+  event.target.classList.add('active');
+}
+
+  </script> -->
 </body>
 </html>

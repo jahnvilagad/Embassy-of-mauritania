@@ -7,7 +7,19 @@
     font-family: "gothi-bold";
     src: url("../fonts/gothi-bold.ttf") format("truetype");
     }
-
+    body::-webkit-scrollbar {
+      width: 6px;
+      height: 0px;
+      transition: .3s background;
+    }
+    
+    body::-webkit-scrollbar-thumb {
+      background:#26AB4D;
+    }
+    
+    body:hover::-webkit-scrollbar-thumb {
+      background:#26AB4D;
+    }
 
 
 .page-loading {
