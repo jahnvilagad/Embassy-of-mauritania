@@ -449,6 +449,31 @@ header .search{
   left: 0; */
 }
 
+.date-border::after {
+  content: "";
+  position: absolute;
+  top: 0.85rem;
+  background-color: #26AB4D;
+  width: 67%;
+  height: 1px;
+  margin-left: 11px;
+  left: -7px;
+}
+
+.about-letter-img:after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(../img/feature/embassy-letter.webp);
+  width: 590px;
+  height: 100%;
+  background-position: 100% center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
 @media (max-width:1366px){
   .about-embassy-mauritania .timing-width{
     width: 100%;
