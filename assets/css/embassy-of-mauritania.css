@@ -16770,7 +16770,7 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 .bs-facebook:hover {
-	background-color: #3b5998
+	background-color: rgb(38 171 77)
 }
 
 .bs-facebook:hover.bs-light {
@@ -17048,10 +17048,10 @@ input[type=search]::-webkit-search-results-decoration {
 	vertical-align: middle
 }
 
-.dropdown-toggle::after {
+/* .dropdown-toggle::after {
 	margin-left: .25rem;
 	content: "\F282";
-}
+} */
 
 .dropdown-toggle::before {
 	margin-right: .25rem
@@ -17850,8 +17850,9 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 .navbar-nav .nav-item {
-	margin-bottom: 0;
-	border-top: 1px solid #e9e9f2
+    margin-bottom: 0;
+    border-top: 1px solid #e9e9f2;
+    cursor: pointer;
 }
 
 .navbar-nav .nav-link {

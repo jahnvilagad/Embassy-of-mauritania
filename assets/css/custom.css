@@ -310,6 +310,24 @@ header .search{
   visibility: visible;
 }
 
+.card-curved-body:hover .flip-text {
+  transform: rotateY(180deg);
+}
+
+.flip-img,
+.card-body-hover-text {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-body-hover-text {
+  transform: rotateY(180deg);
+}
+
+.card-curved-body {
+  perspective: 1000px;
+}
+
 .card-hover:hover .card-floating-icon,
 .card-hover:hover .card-body {
   opacity: 0;
@@ -318,26 +336,43 @@ header .search{
 
 .card-hover:hover .card-body-hover-text .card-floating-icon {
   opacity: 1;
-  bottom: 0.5rem;
+  bottom: 3.5rem;
   visibility: visible;
 }
 
-.card-hover:hover .card-body-hover-text .card-floating-icon a {
+/* .card-hover:hover .card-body-hover-text .card-floating-icon a {
   background-color: unset;
-}
+} */
 .card-body-hover-text {
-  background-color: rgba(0, 0, 0, 0.39);
-  /* border-radius: 1rem; */
-  color: #fff;
+  /* background-color: rgba(0, 0, 0, 0.39);
+  border-radius: 1rem;
+  color: #fff; */
   padding: 1rem;
-  opacity: 0;
+  /* opacity: 0; */
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   z-index: 99999;
+  /* overflow: hidden auto; */
+}
+
+.card-body-hover-text p{
   overflow: hidden auto;
+}
+.card-body-hover-text::after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.39);
+  /* border-radius: 1rem; */
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  /* overflow: hidden auto; */
 }
 .card-floating-icon a {
   width: 3rem;
@@ -351,14 +386,14 @@ header .search{
   margin: 0 2px;
 }
 
-.card-body-hover-text::-webkit-scrollbar-track {
+.card-body-hover-text p::-webkit-scrollbar-track {
   background-color: #ffffff63;
 }
 
-.card-body-hover-text::-webkit-scrollbar-thumb {
+.card-body-hover-text p::-webkit-scrollbar-thumb {
   background-color: #26AB4D;
 }
-.card-body-hover-text::-webkit-scrollbar {
+.card-body-hover-text p::-webkit-scrollbar {
   width: 4px;
 }
 
@@ -514,6 +549,12 @@ header .search{
   font-size: 62px;
 }
 
+.navbar-nav .nav-item .bi-chevron-down {
+  position: absolute;
+  right: -4px;
+  top: 17px;
+}
+
 @media (max-width:1366px){
   .about-embassy-mauritania .timing-width{
     width: 100%;
@@ -557,7 +598,7 @@ header .search{
   }
 }
 
-@media (max-width:768px){
+@media (max-width:991px){
   .bg-grey-1::after{
     position: unset;
     content: unset;
@@ -566,9 +607,18 @@ header .search{
   .date-border::after {
     width: 58%;
   }
+  .dropdown-item{
+    text-align: left;
+  }
+  .dropdown-item {
+    padding: 0.425rem 1.5rem;
+  }
 }
 
 @media (max-width:767px) {
+  #form {
+    top: 4rem;
+}
   .video-recent-border::after {
     width: 39% !important;
 } 
