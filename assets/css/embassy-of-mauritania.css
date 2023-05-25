@@ -6739,9 +6739,8 @@ fieldset:disabled .btn {
 	color: #9e9fb4
 }
 
-.navbar-light .navbar-nav .show>.nav-link,
-.navbar-light .navbar-nav .nav-link.active {
-	color: #766df4
+.navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .nav-link.active {
+    color: #26ab4d;
 }
 
 .navbar-light .navbar-toggler {

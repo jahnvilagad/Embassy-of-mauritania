@@ -486,6 +486,34 @@ header .search{
   z-index: -1;
 }
 
+.recent-border::after {
+  content: '';
+  position: absolute;
+  top: 1.5rem;
+  background-color: #26AB4D;
+  width: 48%;
+  height: 1px;
+  margin-left: 11px;
+  right: 1rem;
+}
+
+.video-recent-border::after{
+  width: 42%;
+}
+
+.about-letter{
+  width: 100%;
+  height: 144px;
+}
+.about-letter img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video-icon i {
+  font-size: 62px;
+}
+
 @media (max-width:1366px){
   .about-embassy-mauritania .timing-width{
     width: 100%;
@@ -501,7 +529,13 @@ header .search{
   }
   .about-timing-mauritania .timing-width {
     width: 100%;
-}
+  }
+  .date-border::after {
+    width: 62%;
+  }
+  .recent-border::after {
+    width: 35%;
+  }
 }
 
 @media (max-width:1024px){
@@ -511,6 +545,9 @@ header .search{
   }
   .banner-mr{
     margin-right: unset;
+  }
+  .video-recent-border::after{
+    width: 28% !important;
   }
 }
 
@@ -526,9 +563,15 @@ header .search{
     content: unset;
     background-color: unset;
   }
+  .date-border::after {
+    width: 58%;
+  }
 }
 
 @media (max-width:767px) {
+  .video-recent-border::after {
+    width: 39% !important;
+} 
   .footer-link li{
     flex: 1 1 auto;
     border-right: 1px solid #fff;
@@ -559,6 +602,15 @@ header .search{
   }
   .nav-link {
     padding: 0.5625rem 1rem;
+  }
+  .about-letter-img:after{
+    display: none;
+  }
+  .date-border::after {
+    width: 64%;
+}
+  .recent-border::after {
+    width: 45%;
   }
 }
 
