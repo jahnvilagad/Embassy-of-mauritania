@@ -336,35 +336,32 @@ header .search{
 
 .card-hover:hover .card-body-hover-text .card-floating-icon {
   opacity: 1;
-  bottom: 3.5rem;
+  bottom: 2.5rem;
   visibility: visible;
 }
 
-/* .card-hover:hover .card-body-hover-text .card-floating-icon a {
-  background-color: unset;
-} */
 .card-body-hover-text {
-  /* background-color: rgba(0, 0, 0, 0.39);
-  border-radius: 1rem;
-  color: #fff; */
   padding: 1rem;
-  /* opacity: 0; */
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   z-index: 99999;
-  /* overflow: hidden auto; */
 }
 
-.card-body-hover-text p{
+.card-body-hover-text p {
   overflow: hidden auto;
+  height: calc(100% - 180px);
+  padding-right: 0.75rem;
+}
+
+.art-culture .card-body-hover-text p {
+  height: calc(100% - 93px);
 }
 .card-body-hover-text::after {
   content: '';
   background-color: rgba(0, 0, 0, 0.39);
-  /* border-radius: 1rem; */
   color: #fff;
   position: absolute;
   top: 0;
@@ -372,7 +369,6 @@ header .search{
   height: 100%;
   width: 100%;
   z-index: -1;
-  /* overflow: hidden auto; */
 }
 .card-floating-icon a {
   width: 3rem;
@@ -418,6 +414,14 @@ header .search{
   width: 137px;
   height: 3px;
   position: absolute;
+}
+
+.art-culture .card-body-hover-text .card-title:before{
+  background-color: #fff;
+}
+
+.art-culture .card-body-hover-text .card-footer a{
+  color: #fff;
 }
 .nav-tabs .nav-link:-webkit-any-link:focus-visible {
   outline: unset;
@@ -532,6 +536,21 @@ header .search{
   right: 1rem;
 }
 
+.latest-news-border h3::after {
+  content: '';
+  position: absolute;
+  top: 1.5rem;
+  background-color: #26AB4D;
+  right: -7rem;
+  width: 56%;
+  height: 1px;
+  margin-left: 11px;
+}
+.article-border::after{
+  width: 39%;
+}
+
+
 .video-recent-border::after{
   width: 42%;
 }
@@ -555,9 +574,37 @@ header .search{
   top: 17px;
 }
 
+.latest-news-date {
+  position: absolute;
+  bottom: -2.5rem;
+  right: 1rem;
+}
+
+.embassy-img {
+  width: 390px;
+  height: 156px;
+}
+.embassy-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.latest-news-img{
+  width: 397px;
+  height: 332px;
+}
+.latest-news-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 @media (max-width:1366px){
   .about-embassy-mauritania .timing-width{
     width: 100%;
+  }
+  .banner .timing-width {
+    width: 96%;
   }
 }
 
@@ -590,6 +637,9 @@ header .search{
   .video-recent-border::after{
     width: 28% !important;
   }
+  .article-border::after {
+    width: 27%;
+  }
 }
 
 @media (min-width:992px) {
@@ -613,9 +663,15 @@ header .search{
   .dropdown-item {
     padding: 0.425rem 1.5rem;
   }
+  .banner h1{
+    font-size: 24px;
+  }
 }
 
 @media (max-width:767px) {
+  .breadcrumb-item+.breadcrumb-item{
+    padding-left: 0;
+  }
   #form {
     top: 4rem;
 }
@@ -644,11 +700,11 @@ header .search{
   .breadcrumb-item {
     font-size: 14px;
   }
-  .breadcrumb {
+  /* .breadcrumb {
     flex-wrap: unset;
-  }
+  } */
   h1{
-    font-size: 20px;
+    font-size: 18px;
   }
   .nav-link {
     padding: 0.5625rem 1rem;
@@ -661,6 +717,20 @@ header .search{
 }
   .recent-border::after {
     width: 45%;
+  }
+  .latest-news-border h3::after {
+    right: -6rem;
+  }
+  .article-border::after {
+    width: 38%;
+  }
+  .public-holiday p{
+    text-align: left;
+  }
+  .bg-grey::after{
+    background-color: unset;
+    position: unset;
+    content: unset;
   }
 }
 
