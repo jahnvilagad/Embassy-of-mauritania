@@ -266,7 +266,7 @@ header .search{
   display: none;
 }
 .banner .timing-width{
-  width: 73%;
+  width:68%;
   margin-left: auto;
 }
 
@@ -619,8 +619,11 @@ header .search{
 }
 @media (max-width:1440px){
   .about-embassy-mauritania .timing-width {
-    width: 96%;
-}
+      width: 96%;
+  }
+  .banner .timing-width {
+    width: 98%;
+  }
 }
 @media (max-width:1366px){
   .about-embassy-mauritania .timing-width{
