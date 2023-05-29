@@ -591,7 +591,7 @@ header .search{
 }
 
 .latest-news-img{
-  width: 397px;
+  width: auto;
   height: 332px;
 }
 .latest-news-img img{
@@ -600,11 +600,27 @@ header .search{
   object-fit: cover;
 }
 
+.flip-img p{
+  text-align: center;
+}
+.art-culture .flip-img p{
+  text-align: left;
+}
+
+.about-embassy-mauritania .timing-width{
+  width: 68%;
+}
+
 .embassy-contact-detail {
   z-index: 3;
 }
 .footer-link {
   z-index: 3;
+}
+@media (max-width:1440px){
+  .about-embassy-mauritania .timing-width {
+    width: 96%;
+}
 }
 @media (max-width:1366px){
   .about-embassy-mauritania .timing-width{
