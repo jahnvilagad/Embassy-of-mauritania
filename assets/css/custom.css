@@ -659,6 +659,11 @@ grid-row: span 2;
 }
 /*grid css end*/
 
+.links table tr th , .links table tr td{
+  padding: 1rem;
+
+}
+
 
 @media (max-width:1440px){
   .about-embassy-mauritania .timing-width {
